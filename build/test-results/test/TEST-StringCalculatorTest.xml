@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="StringCalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-27T15:04:48" hostname="krattz-Latitude-E6510" time="0.022">
+<testsuite name="StringCalculatorTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-03-29T15:00:33" hostname="krattz-Latitude-E6510" time="0.831">
   <properties/>
-  <testcase name="addTest" classname="StringCalculatorTest" time="0.022"/>
+  <testcase name="addTest" classname="StringCalculatorTest" time="0.831"/>
   <system-out><![CDATA[java.lang.NumberFormatException: For input string: ","
 3
+java.lang.NumberFormatException: For input string: ","
+java.lang.NumberFormatException: For input string: ","
+java.lang.NumberFormatException: For input string: ","
+10
 java.lang.NumberFormatException: For input string: "
 "
 5
@@ -13,24 +17,6 @@ java.lang.NumberFormatException: For input string: "
 java.lang.NumberFormatException: For input string: ","
 java.lang.NumberFormatException: For input string: ","
 6
-//rabc]rz]r:(]\n1abc2z3:(1
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
-java.lang.NumberFormatException: For input string: ""
 7
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

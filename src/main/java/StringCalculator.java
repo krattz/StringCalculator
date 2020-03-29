@@ -1,13 +1,11 @@
-import org.w3c.dom.ls.LSOutput;
-
-import java.util.Arrays;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import java.util.regex.*;
 public class StringCalculator {
-    public static void main(String[] args) {
-        add("//94\n142");
-    }
-    public static int add(String text)
+    private static final Logger logger = LogManager.getLogger(MainProgram.class.getName());
+    public int add(String text)
     {
+
      int result = 0;
         if (text.contains("//")){
 
@@ -15,9 +13,7 @@ public class StringCalculator {
             text = text.replaceAll("777", "z");
            String textn = text.replace(x,"r");
 
-            System.out.println(textn);
         String [] num = textn.split("(//[0-9]?)?[^0-9]");
-
 
         for(int i = 0; i<num.length;i++)
         {
@@ -30,15 +26,16 @@ public class StringCalculator {
 
                     result += adding;
                 }else if (adding>1000){
-
+                   
                     throw new Exception();
+
                 }else if(adding < 0){
                     throw  new Exception();
                 }
 
             }catch (NumberFormatException e)
             {
-                System.out.println(e);
+               logger.debug(e);
             } catch (Exception e) {
                 System.out.println("ERROR: invalid input");
             }
@@ -48,8 +45,6 @@ public class StringCalculator {
     }
         else{
             String [] num = text.split("(//[0-9]?)?");
-
-
             for(int i = 0; i<num.length;i++)
             {
                 try {
